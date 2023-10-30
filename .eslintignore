@@ -1,0 +1,17 @@
+*.php
+*.blade.php
+*.scss
+*.json
+
+# Laravel specific
+.env
+.env.*
+public/storage
+storage
+vendor
+routes
+node_modules
+database
+config
+bootstrap
+app

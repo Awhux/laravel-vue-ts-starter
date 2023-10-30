@@ -1,0 +1,25 @@
+*.php
+*.blade.php
+*.scss
+*.json
+
+# Laravel specific
+.env
+.env.*
+public/storage
+storage
+vendor
+routes
+node_modules
+database
+config
+bootstrap
+app
+
+# Ignore all HTML files:
+*.html
+.nuxt
+.output
+CHANGELOG.md
+.demo/public/
+layers/documentation/content/**/*.md
