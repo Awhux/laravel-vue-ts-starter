@@ -1,5 +1,3 @@
-# FILEPATH: /C:/Users/Administrator/Desktop/Coding/PHP/laravel-todo-tailwindcss/phpstan.neon
-
 parameters:
   level: max
   paths:

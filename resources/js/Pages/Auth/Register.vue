@@ -20,14 +20,12 @@ const register = () => {
 
     <!-- form -->
     <form @submit.prevent="register">
-      <input type="hidden" name="csrf" :value="$page.csrf" />
-
-      <input type="text" v-model="form.name" placeholder="Name" />
+      <input type="text" v-model="form.name" placeholder="Nome" />
       <input type="text" v-model="form.email" placeholder="Email" />
-      <input type="password" v-model="form.password" placeholder="Password" />
-      <input type="password" v-model="form.password_confirmation" placeholder="Confirm Password" />
+      <input type="password" v-model="form.password" placeholder="Senha" />
+      <input type="password" v-model="form.password_confirmation" placeholder="Confirmar a senha" />
 
-      <button :disabled="form.processing">{{ form.processing ? 'Loading...' : 'Register' }}</button>
+      <button :disabled="form.processing">{{ form.processing ? 'Carregando...' : 'Registrar' }}</button>
     </form>
   </div>
 </template>

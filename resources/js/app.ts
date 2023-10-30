@@ -9,7 +9,7 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m'
 
 import BaseLayout from './Layouts/BaseLayout.vue'
 
-const appName = import.meta.env.VITE_APP_NAME || 'Todo App'
+const appName = import.meta.env.VITE_APP_NAME
 
 createInertiaApp({
   title: (title) => `${title} - ${appName}`,

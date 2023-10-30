@@ -1,67 +1,68 @@
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vue-tsc && vite build",
-        "lint": "run-s lint:eslint:fix lint:eslint:fix lint:prettier:fix",
-        "lint:prettier": "prettier --check \"./**/*.(ts|vue|md)\"",
-        "lint:prettier:fix": "prettier --write \"./**/*.(ts|vue|md)\"",
-        "lint:eslint": "eslint -c .eslintrc.cjs --ext .vue,.ts .",
-        "lint:eslint:fix": "eslint -c .eslintrc.cjs --fix --ext .vue,.ts .",
-        "commit": "cz"
-    },
-    "devDependencies": {
-        "@inertiajs/vue3": "^1.0.0",
-        "@tailwindcss/forms": "^0.5.3",
-        "@types/ziggy-js": "^1.3.2",
-        "@typescript-eslint/eslint-plugin": "^6.9.0",
-        "@typescript-eslint/parser": "^6.9.0",
-        "@vitejs/plugin-vue": "^4.0.0",
-        "autoprefixer": "^10.4.12",
-        "axios": "^1.1.2",
-        "commitizen": "^4.3.0",
-        "cz-conventional-changelog": "^3.3.0",
-        "date-fns": "^2.30.0",
-        "eslint": "^8.52.0",
-        "eslint-config-prettier": "^9.0.0",
-        "eslint-plugin-prettier-vue": "^5.0.0",
-        "eslint-plugin-security-node": "^1.1.1",
-        "eslint-plugin-tailwindcss": "^3.13.0",
-        "eslint-plugin-vue": "^9.18.1",
-        "eslint-plugin-vuejs-accessibility": "^2.2.0",
-        "husky": "^8.0.3",
-        "laravel-vite-plugin": "^0.8.0",
-        "lint-staged": "^15.0.2",
-        "postcss": "^8.4.18",
-        "prettier": "^3.0.3",
-        "pretty-quick": "^3.1.3",
-        "tailwindcss": "^3.2.1",
-        "typescript": "^5.0.2",
-        "vite": "^4.0.0",
-        "vue": "^3.2.41",
-        "vue-tsc": "^1.2.0"
-    },
-    "dependencies": {
-        "@vitejs/plugin-vue": "^4.4.0",
-        "vue": "^3.3.7",
-        "vue-loader": "^17.3.0"
-    },
-    "gitHooks": {
-        "pre-commit": "lint-staged"
-      },
-      "lint-staged": {
-        "*.(ts|vue)": [
-          "eslint --fix",
-          "prettier --write"
-        ],
-        "*.md": [
-          "prettier --write"
-        ]
-      },
-      "config": {
-        "commitizen": {
-          "path": "./node_modules/cz-conventional-changelog"
-        }
-      }
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "lint": "run-s lint:eslint:fix lint:eslint:fix lint:prettier:fix",
+    "lint:prettier": "prettier --check \"./**/*.(ts|vue|md)\"",
+    "lint:prettier:fix": "prettier --write \"./**/*.(ts|vue|md)\"",
+    "lint:eslint": "eslint -c .eslintrc.cjs --ext .vue,.ts .",
+    "lint:eslint:fix": "eslint -c .eslintrc.cjs --fix --ext .vue,.ts .",
+    "commit": "cz"
+  },
+  "devDependencies": {
+    "@inertiajs/vue3": "^1.0.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/ziggy-js": "^1.3.2",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "autoprefixer": "^10.4.12",
+    "axios": "^1.1.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "date-fns": "^2.30.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier-vue": "^5.0.0",
+    "eslint-plugin-security-node": "^1.1.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "eslint-plugin-vuejs-accessibility": "^2.2.0",
+    "husky": "^8.0.3",
+    "laravel-vite-plugin": "^0.8.0",
+    "lint-staged": "^15.0.2",
+    "postcss": "^8.4.18",
+    "prettier": "^3.0.3",
+    "pretty-quick": "^3.1.3",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.0.0",
+    "vue": "^3.2.41",
+    "vue-tsc": "^1.2.0"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.16",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "vue": "^3.3.7",
+    "vue-loader": "^17.3.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.(ts|vue)": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

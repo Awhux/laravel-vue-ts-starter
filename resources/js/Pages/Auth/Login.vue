@@ -4,6 +4,7 @@ import { Head, useForm } from '@inertiajs/vue3'
 const form = useForm({
   email: '',
   password: '',
+  remember: false,
 })
 
 const login = () => {
@@ -24,7 +25,10 @@ const login = () => {
       <input type="text" v-model="form.email" />
       <input type="password" v-model="form.password" />
 
-      <button :disabled="form.processing">{{ form.processing ? 'Loading...' : 'Login' }}</button>
+      <input type="checkbox" v-model="form.remember" id="remember" name="remember" />
+      <label for="remember">Remember me</label>
+
+      <button :disabled="form.processing">{{ form.processing ? 'Carregando...' : 'Login' }}</button>
     </form>
   </div>
 </template>
