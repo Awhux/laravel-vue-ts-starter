@@ -11,6 +11,9 @@ dependencies:
   '@vitejs/plugin-vue':
     specifier: ^4.4.0
     version: 4.4.0(vite@4.5.0)(vue@3.3.7)
+  '@vue/server-renderer':
+    specifier: ^3.3.7
+    version: 3.3.7(vue@3.3.7)
   vue:
     specifier: ^3.3.7
     version: 3.3.7(typescript@5.2.2)

@@ -24,16 +24,3 @@ Route::middleware('auth')->group(function () {
   Route::get('/logout', [LogoutController::class, 'index'])->name('logout');
 });
 // -=-=-=-=-=-= End Authentication (login, register, logout) =-=-=-=-=-=-=-
-
-// -=-=-=-=-=-= Tasks =-=-=-=-=-=-=-
-Route::group(['prefix' => 'tasks'], function () {
-  Route::get('/', [TaskController::class, 'index'])->name('tasks');
-  Route::get('/{task}/edit', [TaskController::class, 'edit'])->name('tasks.edit');
-
-  Route::post('/save', [TaskController::class, 'store']);
-  Route::post('/search', [TaskController::class, 'search']);
-
-  Route::put('/{task}', [TaskController::class, 'update']);
-  Route::delete('/{task}', [TaskController::class, 'destroy']);
-});
-// -=-=-=-=-=-= End Tasks =-=-=-=-=-=-=-

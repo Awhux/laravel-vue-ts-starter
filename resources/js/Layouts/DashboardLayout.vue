@@ -4,10 +4,6 @@ import Navbar from '@/Components/Navbar.vue'
 const props = defineProps<{
   auth?: any
 }>()
-
-const isCurrentRoute = (routeName: string) => {
-  return route().current(routeName)
-}
 </script>
 
 <template>

@@ -15,12 +15,11 @@ const isCurrentRoute = (routeName: string) => {
     <div class="mx-auto flex w-full max-w-5xl flex-row justify-between">
       <!-- Title -->
       <div class="flex items-center">
-        <div class="text-xl">Dashboard das tarefas</div>
+        <div class="text-xl">Dashboard</div>
       </div>
 
       <!-- Links -->
       <div class="flex gap-1">
-        <NavbarItem href="/tasks" :current-route="isCurrentRoute('tasks')"> Tarefas </NavbarItem>
         <template v-if="!user">
           <NavbarItem href="/login" :current-route="isCurrentRoute('login')"> Login </NavbarItem>
           <NavbarItem href="/register" :current-route="isCurrentRoute('register')"> Registrar </NavbarItem>

@@ -1,9 +1,10 @@
 {
   "private": true,
   "type": "module",
+  "name": "@alwaysfit/laravel-vue-ts-starter",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build && vite build --ssr",
     "lint": "run-s lint:eslint:fix lint:eslint:fix lint:prettier:fix",
     "lint:prettier": "prettier --check \"./**/*.(ts|vue|md)\"",
     "lint:prettier:fix": "prettier --write \"./**/*.(ts|vue|md)\"",
@@ -45,6 +46,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
     "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/server-renderer": "^3.3.7",
     "vue": "^3.3.7",
     "vue-loader": "^17.3.0"
   },
